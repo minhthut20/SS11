@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+    <img id="img"
+    src="https://cdn.pixabay.com/photo/2013/07/13/10/51/football-157930__480.png" 
+    alt=""><br>
+    <button onclick="moveRight()">Click me</button>
+    <script>
+        let imgObj = null;
+        function myFunction (){
+            imgObj = document.getElementById("img");
+            imgObj.style.position = "relative";
+            imgObj.style.left = '0px';
+        }
+        function moveRight () {
+            imgObj.style.left = parseInt(imgObj.style.left) + 80 + "px";
+        }
+        window.onload=myFunction;
+    </script>
+
+</body>
+</html>
