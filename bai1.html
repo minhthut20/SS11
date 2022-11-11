@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ainput = prompt("Input your height : ");
+        let binput = prompt("Input your weight : ");
+
+        a = parseInt(ainput);
+        b = parseInt(binput);
+
+        let bmi = b / (a**2);
+
+        // if ( bmi < 18.5){
+        //     alert(" You are so Thin");
+        // }
+        // else {
+        //     if  ( bmi < 25){
+        //         alert("You are Normal");
+        //     }
+        //     else{
+        //         if ( bmi < 30){
+        //             alert("You are so Fat");
+        //         }
+        //         else{ 
+        //             alert("You need to go to the Gym");
+        //         }
+        //     }
+        // }
+        if ( bmi < 18.5) {
+            alert(" You are so Thin");
+        }
+        else if ( bmi < 25 ) {
+            alert(" You are Normal");
+        }
+        else if ( bmi < 30 ) {
+            alert(" You are so Fat")
+        }
+        else{
+            alert(" You need to go to the Gym ")
+        }
+    </script>
+</body>
+</html>
