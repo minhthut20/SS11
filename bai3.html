@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .calculator {
+            background-color: rgb(185, 222, 245);
+        }
+    </style>
+</head>
+<body>
+    <table class="calculator">
+        <tr style="text-align:center">
+            <tdX colspan="4"><input class="display-box" type="text" id="calculator"></td>       
+        </tr>
+    
+        <tr>
+            <td> <input type="button" value="1" onclick="dislay('1')"/></td>
+            <td> <input type="button" value="2" onclick="dislay('2')"/></td>
+            <td> <input type="button" value="3" onclick="dislay('3')"/></td>
+            <td> <input type="button" value="+" onclick="dislay('+')"/></td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="4" onclick="dislay('4')"/></td>
+            <td> <input type="button" value="5" onclick="dislay('5')"/></td>
+            <td> <input type="button" value="6" onclick="dislay('6')"/></td>
+            <td> <input type="button" value="-" onclick="dislay('-')"/></td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="7" onclick="dislay('7')"/></td>
+            <td> <input type="button" value="8" onclick="dislay('8')"/></td>
+            <td> <input type="button" value="9" onclick="dislay('9')"/></td>
+            <td> <input type="button" value="*" onclick="dislay('*')"/></td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="C" onclick="clearScreen()" id="btn"/></td>
+            <td> <input type="button" value="0" onclick="dislay('0')"/></td>
+            <td> <input type="button" value="=" onclick="calculate()" id="btn"/></td>
+            <td> <input type="button" value="/" onclick="dislay('/')"/></td>
+        </tr>  
+    </table>
+    <script>
+        // xoá
+        function clearScreen(){
+            document.getElementById("calculator").value="";
+        }
+        // kết quả
+        function dislay(value){
+            document.getElementById("calculator").value += value;
+        }
+
+        function calculate(){
+            var a = document.getElementById("calculator").value;
+            var b = eval(a);
+            document.getElementById("calculator").value=b
+        }
+    </script>
+</html>
