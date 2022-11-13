@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: wheat;
+        }
+        #border {
+            width: 25%;
+            border: 5px dotted rgb(117, 98, 255);
+            padding: 0;
+            margin: auto;
+            margin-top: 100px;
+        }
+        #border p {
+            text-align: center;
+        }
+        p img {
+            border: 5px double rgb(132, 82, 218);
+        }
+    </style>
+</head>
+<body>
+    <div id="border" >
+        <p>
+            <img id="1"
+            src="./anime1.jpg" 
+            alt="" width="200px" height="120px" onclick="changeImg1()">
+        </p>
+        <p>
+            <img id="2" onclick="changeImg2()"
+            src="./anime2.jpg" 
+            alt="" width="200px" height="120px">
+        </p>
+        <p>
+            <img id="3" onclick="changeImg3()"
+            src="./anime3.jpg" 
+            alt="" width="200px" height="120px">
+        </p>
+    </div>
+    <!-- <button onclick="finish()">
+        Submit
+    </button> -->
+    <script>
+        function changeImg1() {
+            var img1 = document.getElementById('1');
+            if (img1.src.match("/Lession11/img/img1.jpg")) {
+                img1.src = "/Lession11/img/img4.jpg"
+            } else {
+                img1.src = "/Lession11/img/img1.jpg"
+            }
+        }
+        function changeImg2() {
+            var img2 = document.getElementById('2');
+            if (img2.src.match("/Lession11/img/img2.jpg")) {
+                img2.src = "/Lession11/img/img5.jpg"
+            } else {
+                img2.src = "/Lession11/img/img2.jpg"
+            }
+        }
+        function changeImg3() {
+            var img3 = document.getElementById('3');
+            if (img3.src.match("/Lession11/img/img3.jpg")) {
+                img3.src = "/Lession11/img/img6.jpg";
+                document.getElementById("border").style.border = "5px dotted red";
+            } else {
+                img3.src = "/Lession11/img/img3.jpg"
+            }
+        }
+        // function finish () {
+        //     document.getElementById("border").style.border = "2px solid red"
+        // }
+    </script>
+</body>
+</html>
