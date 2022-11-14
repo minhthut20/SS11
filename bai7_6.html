@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+   <script>
+      let turnover =parseInt(prompt("Nhập doanh thu của tháng :"));
+      let commission;
+      if(turnover < 100){
+         commission=turnover*2/100;
+      }
+         else if(100<turnover<500){
+            commission= 100*2/100 + (turnover-100)*5/100;
+         }
+         else {
+            commission= 100*2/100 + (500-100)*5/100 + (turnover-500)*9100;
+         }
+      document.write(commission);
+   </script>
+ </body>
+ </html>

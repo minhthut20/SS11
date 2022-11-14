@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let time= parseInt(prompt(" Nhập số phút đã sử dụng : "));
+        let money;
+        if(time<10){
+            alert("Bạn đã thanh toán trong gói cố định hàng tháng");
+        }
+            else if (time<20){
+                money=(time-10)*800;
+                document.write("Số tiền phải trả thêm là : " + money);
+            }
+            else{
+                money=(20-10)*800 + (money-20)*500;
+                document.write("Số tiền phải trả thêm là : " + money);
+            }
+
+    </script>
+</body>
+</html>
