@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt(" Nhập vào số : "));
+        let b = parseInt(prompt(" Nhập vào số : "));
+        let c = parseInt(prompt(" Nhập vào số : "));
+        if ( a > 0 && b > 0 && c > 0){
+            if ( (a+b>c) && (b+c>a) && (a+c>b)){
+                document.write(" Đây là hình tam giác");
+            }
+            else{
+                document.write(" khong phai");
+            }
+        }
+        else{
+            document.write(" khong phai");
+        }
+    </script>
+</body>
+</html>

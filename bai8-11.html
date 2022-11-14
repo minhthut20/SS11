@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let monthlysalary = parseInt(prompt( "Nhập lương tháng của bạn : "));
+        let incomeTax;
+        // if ( monthlysalary <= 5){
+        //     document.write(( monthlysalary * 5)/100);
+        // }
+        //     else if( monthlysalary <= 10){
+        //         console.log(monthlysalary);
+        //         document.write(" Thuế nhu nhập bạn phải trả là :" + ((monthlysalary * 10)/100 - 0.25));
+        //     }
+        //     else if(  monthlysalary <= 18 ){
+        //         document.write(" Thuế nhu nhập bạn phải trả là :" + (( monthlysalary * 15)/100 - 0.75));
+        //     }
+        //     else if(  monthlysalary <= 32){
+        //         document.write(" Thuế nhu nhập bạn phải trả là :" + (( monthlysalary * 20)/100 - 1.65));
+        //     }
+        //     else if(  monthlysalary <= 52){
+        //         document.write(" Thuế nhu nhập bạn phải trả là :" + (( monthlysalary * 25)/100 - 3.25));
+        //     }
+        //     else if(  monthlysalary <= 80){
+        //         document.write(" Thuế nhu nhập bạn phải trả là :" + (( monthlysalary * 30)/100 - 5.85));
+        //     }
+        // else{
+        //     document.write(" Thuế nhu nhập bạn phải trả là :" + (( monthlysalary * 35)/100 - 9.85));
+        // }
+        if ( monthlysalary <= 5){
+            document.write(( monthlysalary * 5)/100);
+        }
+            else if( monthlysalary <= 10){
+                incomeTax=(monthlysalary * 10)/100 - 0.25;
+            }
+            else if(  monthlysalary <= 18 ){
+                incomeTax=( monthlysalary * 15)/100 - 0.75;
+            }
+            else if(  monthlysalary <= 32){
+                incomeTax=( monthlysalary * 20)/100 - 1.65;
+            }
+            else if(  monthlysalary <= 52){
+                incomeTax=( monthlysalary * 25)/100 - 3.25;
+            }
+            else if(  monthlysalary <= 80){
+                incomeTax=( monthlysalary * 30)/100 - 5.85;
+            }
+        else{
+                incomeTax=( monthlysalary * 35)/100 - 9.85;
+        }
+        document.write(" Thuế nhu nhập bạn phải trả là :" + incomeTax);
+        
+    </script>
+</body>
+</html>

@@ -8,13 +8,27 @@
 </head>
 <body>
     <script>
-        var a = parseInt(prompt("Input the amount of electricity you used"));
-        var b = a*35;
-        if (a>100) {
-            document.write("Your electricity cost: " + (b-100) + "USD")
-        } else {
-            document.write("Your electricity cost: " + b + "USD")
+        let electricnumber = parseInt(prompt(" Nhập số điện gia đình bạn sử dụng :"));
+        let money 
+        if ( electricnumber<50){
+            document.write( electricnumber * 1678);
         }
+            else if ( 51 < electricnumber < 100){
+                document.write(" Số tiền điện phải trả là : " + electricnumber * 1734);
+            }
+            else if ( 101 < electricnumber < 200){
+                document.write(" Số tiền điện phải trả là : " + electricnumber * 2014);
+            }
+            else if ( 201 < electricnumber < 300){
+                document.write(" Số tiền điện phải trả là : " + electricnumber * 2536);
+            }
+            else if ( 301 < electricnumber < 400 ){
+                document.write(" Số tiền điện phải trả là : " + electricnumber * 2834);
+            }
+        else {
+            document.write(" Số tiền điện phải trả là : " + electricnumber * 2927);
+        }      
+  
     </script>
 </body>
 </html>
